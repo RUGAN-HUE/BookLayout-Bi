@@ -2,7 +2,10 @@
 
 from __future__ import annotations
 
+import csv
+import hashlib
 import json
+import re
 from pathlib import Path
 
 
@@ -16,6 +19,8 @@ EXPECTED = {
 }
 FORBIDDEN_RECORD_KEYS = {"image_path", "imagePath", "imageData", "source_local_path"}
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp", ".tif", ".tiff"}
+HEX_16 = re.compile(r"^[0-9a-f]{16}$")
+HEX_64 = re.compile(r"^[0-9a-f]{64}$")
 
 
 def read_ids(path: Path) -> list[str]:
@@ -52,6 +57,18 @@ def main() -> None:
         assert len(ids) == len(set(ids))
         assert set(ids).issubset(by_id)
 
+    manifest_path = root / "statistics" / "split_manifest.json"
+    with manifest_path.open("r", encoding="utf-8") as stream:
+        split_manifest = json.load(stream)["files"]
+    assert set(split_manifest) == {f"{name}.txt" for name in splits}
+    for name in splits:
+        filename = f"{name}.txt"
+        split_path = split_root / filename
+        entry = split_manifest[filename]
+        assert entry["records"] == EXPECTED[name]
+        digest = hashlib.sha256(split_path.read_bytes()).hexdigest()
+        assert digest == entry["sha256"]
+
     test = set(splits["test"])
     stage1_train = set(splits["stage1_train"])
     stage1_validation = set(splits["stage1_validation"])
@@ -67,6 +84,21 @@ def main() -> None:
         if record["annotation_type"] == "manual"
     }
 
+    provenance_path = root / "data" / "provenance.csv"
+    with provenance_path.open("r", encoding="utf-8-sig", newline="") as stream:
+        provenance = list(csv.DictReader(stream))
+    assert len(provenance) == EXPECTED["records"]
+    provenance_ids = [row["sample_id"] for row in provenance]
+    assert len(provenance_ids) == len(set(provenance_ids))
+    assert set(provenance_ids) == set(record_ids)
+    for row in provenance:
+        assert HEX_16.fullmatch(row["phash_64"])
+        assert HEX_64.fullmatch(row["sha256"])
+        source_url = row["source_url"]
+        assert not source_url or source_url.startswith(("http://", "https://"))
+        serialized = "|".join(row.values())
+        assert not re.search(r"(?:^|[|])(?:[A-Za-z]:\\|/home/|/Users/)", serialized)
+
     image_files = [path for path in root.rglob("*") if path.suffix.lower() in IMAGE_EXTENSIONS]
     assert not image_files, image_files[:5]
     print("BookLayout-Bi validation: PASS")
@@ -74,4 +106,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

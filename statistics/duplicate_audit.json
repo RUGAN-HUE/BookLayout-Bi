@@ -1,0 +1,38 @@
+{
+  "audit_scope": "Post-hoc source-image duplicate screening for the fixed manuscript split",
+  "methods": {
+    "exact": "SHA-256 equality",
+    "screening": "Equality of the released 64-bit perceptual hash",
+    "confirmation": "Visual inspection of every perceptual-hash group crossing the held-out test and non-test partitions"
+  },
+  "exact_duplicate_groups": 29,
+  "exact_duplicate_groups_crossing_test": 0,
+  "perceptual_hash_groups": 55,
+  "perceptual_hash_groups_crossing_test": 3,
+  "confirmed_same_cover_groups_crossing_test": 2,
+  "visually_rejected_false_positive_groups_crossing_test": 1,
+  "confirmed_pairs": [
+    {
+      "phash_64": "bacb3424cbcc330f",
+      "non_test_sample_id": "BLB-7704B5A201351296",
+      "non_test_membership": [
+        "stage1_train",
+        "stage2_train"
+      ],
+      "test_sample_id": "BLB-E117693F316F8DE9",
+      "classification": "same cover stored with different image encoding"
+    },
+    {
+      "phash_64": "ff4782bf3d4840b0",
+      "non_test_sample_id": "BLB-424032A6C5F08DAC",
+      "non_test_membership": [
+        "stage1_train",
+        "stage2_train"
+      ],
+      "test_sample_id": "BLB-92CD19611D69000C",
+      "classification": "same cover stored as a resolution or compression variant"
+    }
+  ],
+  "interpretation": "The fixed split and reported manuscript results are retained for traceability. Two of the 194 test records have a visually duplicated source cover in the non-test pool under a different identifier. This is a benchmark limitation and should be disclosed; it does not justify describing the split as image-level duplicate-free.",
+  "original_image_pixels_included": false
+}

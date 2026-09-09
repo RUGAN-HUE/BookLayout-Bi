@@ -1,0 +1,11 @@
+{
+  "description": "SHA-256 digests cover the UTF-8 split files byte for byte, including record order.",
+  "split_seed": 42,
+  "files": {
+    "stage1_train.txt": {"records": 8971, "sha256": "6a9fda05f2d0799d46e1c129e231fa8e9fd086a70a3bc05d0cafa8c531e97d64"},
+    "stage1_validation.txt": {"records": 996, "sha256": "1e2b5e3cfeabcfe81c2150517d187bbdae339955f6e15e29a9db364410cf5ac2"},
+    "stage2_train.txt": {"records": 1572, "sha256": "b752174fdd0aea14c0bf42b070b46e63cb514018c679ba1a36f913f0579a4597"},
+    "stage2_validation.txt": {"records": 174, "sha256": "7292a2a9dff52ebf7c89ed03c144e9a667b0a5ba94ddccf689d9504b2b20dc62"},
+    "test.txt": {"records": 194, "sha256": "a1bdf65eb977adcfba9e9bcacd9949800818a77f823d3206ea22b37f6a5ad959"}
+  }
+}

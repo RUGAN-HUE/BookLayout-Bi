@@ -1,0 +1,19 @@
+{
+  "records": 10161,
+  "english_records": 5083,
+  "chinese_records": 5078,
+  "english_source_urls_recovered": 4723,
+  "english_source_urls_exact_filename": 4635,
+  "english_source_urls_unique_normalized_identifier": 88,
+  "english_source_urls_not_recovered": 360,
+  "chinese_source_urls_not_retained": 5078,
+  "perceptual_hash_algorithm": "64-bit pHash: grayscale 32x32, orthonormal 2D DCT-II, top-left 8x8 coefficients thresholded at their median",
+  "perceptual_hashes_present": 10161,
+  "unique_perceptual_hashes": 10105,
+  "perceptual_hash_duplicate_groups": 55,
+  "sha256_hashes_present": 10161,
+  "unique_sha256_hashes": 10132,
+  "exact_duplicate_groups": 29,
+  "original_image_pixels_included": false,
+  "local_filesystem_paths_included": false
+}
