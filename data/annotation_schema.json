@@ -1,0 +1,13 @@
+{
+  "sample_id": "Stable opaque BookLayout-Bi record identifier.",
+  "annotation_type": "manual or automatic annotation.",
+  "subject": "Cover-level subject category.",
+  "subject_id": "Integer subject identifier used in the reported experiments.",
+  "language": "Cover-level Chinese or English language label.",
+  "language_id": "Integer language identifier used in the reported experiments.",
+  "image_width": "Source image width used for annotation normalization.",
+  "image_height": "Source image height used for annotation normalization.",
+  "num_elements": "Number of released layout elements.",
+  "elements.role": "Fine-grained functional role label.",
+  "elements.bbox_xyxy_normalized": "[x_min, y_min, x_max, y_max] in [0, 1]."
+}

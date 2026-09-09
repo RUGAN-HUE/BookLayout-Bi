@@ -1,0 +1,56 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Original or derived image pixels must never enter this repository
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.webp
+*.tif
+*.tiff
+*.svg
+
+# Raw/private material
+data/raw/
+data/images/
+private/
+provenance/private/
+downloads/
+archives/
+*.zip
+*.7z
+*.rar
+
+# Python and editor artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+.pytest_cache/
+.mypy_cache/
+
+# Office documents and operating-system artifacts
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.pdf
+Thumbs.db
+.DS_Store
+
+# Temporary and log files
+*.log
+*.tmp
+*.bak
+~$*
+

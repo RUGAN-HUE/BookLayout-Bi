@@ -1,0 +1,35 @@
+{
+  "records": 10161,
+  "elements": 59053,
+  "records_by_language": {
+    "chinese": 5078,
+    "english": 5083
+  },
+  "records_by_subject": {
+    "Arts": 3238,
+    "Engineering": 4404,
+    "Science": 2519
+  },
+  "records_by_annotation_type": {
+    "auto": 8221,
+    "manual": 1940
+  },
+  "elements_by_role": {
+    "Author": 7832,
+    "Badge": 5317,
+    "Endorsement": 8243,
+    "Logo": 7364,
+    "Main_Image": 10813,
+    "Publisher": 2673,
+    "Series": 2605,
+    "Subtitle": 4288,
+    "Title": 9918
+  },
+  "split_counts": {
+    "stage1_train": 8971,
+    "stage1_validation": 996,
+    "stage2_train": 1572,
+    "stage2_validation": 174,
+    "test": 194
+  }
+}

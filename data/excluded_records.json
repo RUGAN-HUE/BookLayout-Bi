@@ -1,0 +1,72 @@
+[
+  {
+    "sample_id": "BLB-D5D39AAB45296A64",
+    "reason": "no_detectable_layout_elements",
+    "annotation_type": "auto",
+    "subject": "Arts",
+    "language": "chinese"
+  },
+  {
+    "sample_id": "BLB-9E13BCCD7FF7123F",
+    "reason": "no_detectable_layout_elements",
+    "annotation_type": "auto",
+    "subject": "Arts",
+    "language": "chinese"
+  },
+  {
+    "sample_id": "BLB-3575930B7D324387",
+    "reason": "no_detectable_layout_elements",
+    "annotation_type": "auto",
+    "subject": "Arts",
+    "language": "chinese"
+  },
+  {
+    "sample_id": "BLB-580D6C0160101D97",
+    "reason": "no_detectable_layout_elements",
+    "annotation_type": "auto",
+    "subject": "Arts",
+    "language": "chinese"
+  },
+  {
+    "sample_id": "BLB-D2B4AE171206992B",
+    "reason": "no_detectable_layout_elements",
+    "annotation_type": "auto",
+    "subject": "Arts",
+    "language": "chinese"
+  },
+  {
+    "sample_id": "BLB-5190F499EE0623E6",
+    "reason": "no_detectable_layout_elements",
+    "annotation_type": "auto",
+    "subject": "Arts",
+    "language": "chinese"
+  },
+  {
+    "sample_id": "BLB-B593B258BA404B0B",
+    "reason": "no_detectable_layout_elements",
+    "annotation_type": "auto",
+    "subject": "Arts",
+    "language": "chinese"
+  },
+  {
+    "sample_id": "BLB-272310259533F681",
+    "reason": "no_detectable_layout_elements",
+    "annotation_type": "auto",
+    "subject": "Arts",
+    "language": "chinese"
+  },
+  {
+    "sample_id": "BLB-C938F2225571F48E",
+    "reason": "no_detectable_layout_elements",
+    "annotation_type": "auto",
+    "subject": "Arts",
+    "language": "chinese"
+  },
+  {
+    "sample_id": "BLB-6FCAF48F6C8DAB91",
+    "reason": "no_detectable_layout_elements",
+    "annotation_type": "auto",
+    "subject": "Arts",
+    "language": "chinese"
+  }
+]
