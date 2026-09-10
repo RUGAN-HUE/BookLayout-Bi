@@ -13,5 +13,6 @@
 - [x] Missing source URLs are identified explicitly rather than inferred.
 - [x] Duplicate and split audit is documented.
 - [x] CC BY-NC 4.0 data scope, PolyForm Noncommercial software-tool scope, and third-party artwork exclusion are explicit.
-- [ ] Data Availability Statement matches the final public repository.
-- [ ] Repository visibility remains private until the author approves publication.
+- [x] `CITATION.cff` contains version 1.0.0 metadata without an unissued DOI or release date.
+- [x] Repository documentation contains the verified facts needed for the final DOI-dependent Data Availability Statement.
+- [x] Public-release content review is complete; changing repository visibility remains an author-only step.

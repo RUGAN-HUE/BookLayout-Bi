@@ -40,9 +40,18 @@ def main() -> None:
     license_scope = (root / "LICENSE_SCOPE.md").read_text(encoding="utf-8")
     assert "Commercial use" in license_scope
     assert "do **not** apply to the underlying book-cover artwork" in license_scope
+    citation = (root / "CITATION.cff").read_text(encoding="utf-8")
+    assert "cff-version: 1.2.0" in citation
+    assert 'version: "1.0.0"' in citation
+    assert "license: CC-BY-NC-4.0" in citation
+    assert "repository: \"https://github.com/RUGAN-HUE/BookLayout-Bi\"" in citation
+    assert "doi:" not in citation.lower()
+    assert "date-released:" not in citation.lower()
     annotation_path = root / "data" / "booklayout_bi_annotations.json"
     with annotation_path.open("r", encoding="utf-8") as stream:
-        records = json.load(stream)["records"]
+        release = json.load(stream)
+    assert release["meta"]["release_status"] == "v1.0.0 release package"
+    records = release["records"]
 
     assert len(records) == EXPECTED["records"]
     record_ids = [record["sample_id"] for record in records]

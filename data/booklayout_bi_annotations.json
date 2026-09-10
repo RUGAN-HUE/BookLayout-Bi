@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "BookLayout-Bi",
-    "release_status": "private preparation copy",
+    "release_status": "v1.0.0 release package",
     "record_count": 10161,
     "excluded_record_count": 10,
     "bbox_format": "normalized xyxy: [x_min, y_min, x_max, y_max]",

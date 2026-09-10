@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use BookLayout-Bi, please cite this dataset release and the associated LGC-Net paper. File-specific license boundaries are documented in LICENSE_SCOPE.md."
+title: "BookLayout-Bi: Bilingual Book Cover Layout Annotations and Fixed Experimental Splits"
+type: dataset
+version: "1.0.0"
+authors:
+  - family-names: Zhu
+    given-names: Lei
+  - family-names: Li
+    given-names: Jiahao
+  - family-names: Xue
+    given-names: Xiaoyan
+  - family-names: Zhang
+    given-names: Yuan
+repository: "https://github.com/RUGAN-HUE/BookLayout-Bi"
+url: "https://github.com/RUGAN-HUE/BookLayout-Bi"
+license: CC-BY-NC-4.0
+keywords:
+  - book cover
+  - layout annotations
+  - bilingual dataset
+  - document layout generation
+  - structured metadata

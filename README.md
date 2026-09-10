@@ -1,8 +1,8 @@
 # BookLayout-Bi
 
-> Preparation copy: this repository is not yet ready for public release.
-
 BookLayout-Bi is a bilingual book-cover layout dataset used to evaluate LGC-Net. The final experimental set contains 10,161 Chinese and English cover-layout records. Each record contains structured layout annotations and cover-level attributes, but no original cover-image pixels.
+
+The repository metadata describe version 1.0.0. Citation metadata are provided in [`CITATION.cff`](CITATION.cff); the persistent DOI will be added after the GitHub release has been archived.
 
 ## Repository contents
 
@@ -16,9 +16,9 @@ BookLayout-Bi is a bilingual book-cover layout dataset used to evaluate LGC-Net.
 
 ## Copyright boundary
 
-The underlying cover artwork remains subject to third-party copyright. Original cover images will not be redistributed through this repository. This repository will release only author-created structured annotations, identifiers, split files, and legally distributable provenance information.
+The underlying cover artwork remains subject to third-party copyright. Original cover images are not redistributed through this repository. This repository releases only author-created structured annotations, identifiers, split files, and legally distributable provenance information.
 
-## Current preparation status
+## Release contents
 
 The source corpus contains 10,171 cleaned records. Ten records without detectable layout elements are excluded, leaving 10,161 records for the reported experiments. The released annotations are self-contained for the coordinate-only layout generation and evaluation task; source images are not consumed by the reported LGC-Net pipeline.
 

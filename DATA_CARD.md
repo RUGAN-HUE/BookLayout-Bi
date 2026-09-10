@@ -1,7 +1,5 @@
 # Dataset Card for BookLayout-Bi
 
-> Preparation copy. Repository visibility must remain private until the authors approve public release.
-
 ## Dataset summary
 
 - Raw collection size: approximately 27,000 Chinese and English book covers in total.
@@ -13,9 +11,9 @@
 - Functional element categories: nine.
 - Annotation types: manual and automatic.
 
-## Intended release
+## Release contents
 
-The release will contain structured layout annotations, cover-level labels, fixed experimental splits, schema documentation, and legally distributable provenance information. It will not contain original cover-image pixels.
+The release contains structured layout annotations, cover-level labels, fixed experimental splits, schema documentation, and legally distributable provenance information. It does not contain original cover-image pixels.
 
 The reported task predicts normalized element bounding boxes from element roles and optional cover-level conditions. It does not use cover-image pixels during model training or evaluation, so the structured package is sufficient to rerun the reported coordinate-generation pipeline.
 
