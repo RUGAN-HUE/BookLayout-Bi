@@ -22,4 +22,4 @@ The English subset was sampled from Book Dataset--Task 2 (Book32). Users remain 
 
 ## Required attribution
 
-Scholarly publications using BookLayout-Bi should cite the associated LGC-Net paper and the archived dataset release once its persistent identifier is available. Version 1.0.0 citation metadata are provided in `CITATION.cff`; the DOI will be added after archival.
+Scholarly publications using BookLayout-Bi should cite the associated LGC-Net paper and the archived dataset release once its persistent identifier is available. Version 1.0.0 citation metadata are provided in `CITATION.cff`, and `.zenodo.json` identifies the archived GitHub release as a dataset; the DOI will be added after archival.

@@ -1,0 +1,30 @@
+{
+  "title": "BookLayout-Bi: Bilingual Book Cover Layout Annotations and Fixed Experimental Splits",
+  "description": "BookLayout-Bi provides 10,161 structured Chinese and English book-cover layout records and fixed experimental splits used to evaluate LGC-Net. The archive contains normalized annotations, cover-level attributes, provenance metadata, duplicate audits, split manifests, statistics, and validation tools. It does not redistribute original book-cover image pixels. The author-created annotations and metadata are licensed under CC BY-NC 4.0; author-created tools are licensed under PolyForm Noncommercial 1.0.0; rights in third-party cover artwork and other third-party content are excluded. See LICENSE_SCOPE.md for the file-specific boundaries.",
+  "creators": [
+    {
+      "name": "Zhu, Lei"
+    },
+    {
+      "name": "Li, Jiahao"
+    },
+    {
+      "name": "Xue, Xiaoyan"
+    },
+    {
+      "name": "Zhang, Yuan"
+    }
+  ],
+  "version": "1.0.0",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-by-nc-4.0",
+  "language": "eng",
+  "keywords": [
+    "book cover",
+    "layout annotations",
+    "bilingual dataset",
+    "document layout generation",
+    "fixed experimental splits"
+  ]
+}

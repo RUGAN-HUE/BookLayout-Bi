@@ -2,7 +2,7 @@
 
 BookLayout-Bi is a bilingual book-cover layout dataset used to evaluate LGC-Net. The final experimental set contains 10,161 Chinese and English cover-layout records. Each record contains structured layout annotations and cover-level attributes, but no original cover-image pixels.
 
-The repository metadata describe version 1.0.0. Citation metadata are provided in [`CITATION.cff`](CITATION.cff); the persistent DOI will be added after the GitHub release has been archived.
+The repository metadata describe version 1.0.0. Citation metadata are provided in [`CITATION.cff`](CITATION.cff), and [`.zenodo.json`](.zenodo.json) identifies the archived GitHub release as a dataset. The persistent DOI will be added after the GitHub release has been archived.
 
 ## Repository contents
 
