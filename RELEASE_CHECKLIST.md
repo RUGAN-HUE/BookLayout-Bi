@@ -13,7 +13,7 @@
 - [x] Missing source URLs are identified explicitly rather than inferred.
 - [x] Duplicate and split audit is documented.
 - [x] CC BY-NC 4.0 data scope, PolyForm Noncommercial software-tool scope, and third-party artwork exclusion are explicit.
-- [x] `CITATION.cff` contains version 1.0.0 metadata without an unissued DOI or release date.
+- [x] `CITATION.cff` contains the issued version 1.0.0 DOI and release date.
 - [x] `.zenodo.json` explicitly registers the GitHub archive as a dataset, uses CC BY-NC 4.0 as the primary data license, and preserves the mixed-license and third-party-artwork boundaries in its description.
 - [x] Repository documentation contains the verified facts needed for the final DOI-dependent Data Availability Statement.
 - [x] Public-release content review is complete; changing repository visibility remains an author-only step.

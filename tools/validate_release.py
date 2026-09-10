@@ -45,8 +45,8 @@ def main() -> None:
     assert 'version: "1.0.0"' in citation
     assert "license: CC-BY-NC-4.0" in citation
     assert "repository: \"https://github.com/RUGAN-HUE/BookLayout-Bi\"" in citation
-    assert "doi:" not in citation.lower()
-    assert "date-released:" not in citation.lower()
+    assert 'doi: "10.5281/zenodo.22684585"' in citation
+    assert 'date-released: "2026-09-10"' in citation
     with (root / ".zenodo.json").open("r", encoding="utf-8") as stream:
         zenodo = json.load(stream)
     assert zenodo["title"] == (
@@ -56,6 +56,7 @@ def main() -> None:
     assert zenodo["upload_type"] == "dataset"
     assert zenodo["access_right"] == "open"
     assert zenodo["license"] == "cc-by-nc-4.0"
+    assert "doi" not in zenodo
     assert zenodo["creators"] == [
         {"name": "Zhu, Lei"},
         {"name": "Li, Jiahao"},
@@ -67,6 +68,8 @@ def main() -> None:
     assert "third-party cover artwork" in zenodo["description"]
     readme = (root / "README.md").read_text(encoding="utf-8")
     assert "[`.zenodo.json`](.zenodo.json) identifies the archived GitHub release as a dataset" in readme
+    assert "10.5281/zenodo.22684585" in readme
+    assert "10.5281/zenodo.22684584" in readme
     assert "`.zenodo.json` identifies the archived GitHub release as a dataset" in license_scope
     annotation_path = root / "data" / "booklayout_bi_annotations.json"
     with annotation_path.open("r", encoding="utf-8") as stream:
