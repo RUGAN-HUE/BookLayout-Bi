@@ -29,6 +29,17 @@ def read_ids(path: Path) -> list[str]:
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
+    assert hashlib.sha256((root / "LICENSE").read_bytes()).hexdigest() == (
+        "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19"
+    )
+    assert hashlib.sha256(
+        (root / "LICENSES" / "PolyForm-Noncommercial-1.0.0.md").read_bytes()
+    ).hexdigest() == "ff67ab0c08d545dc4e5dac0f072807eb6c5002c1ed1c3de7093e1eaa0b02d298"
+    license_text = (root / "LICENSE").read_text(encoding="utf-8")
+    assert "Attribution-NonCommercial 4.0 International" in license_text
+    license_scope = (root / "LICENSE_SCOPE.md").read_text(encoding="utf-8")
+    assert "Commercial use" in license_scope
+    assert "do **not** apply to the underlying book-cover artwork" in license_scope
     annotation_path = root / "data" / "booklayout_bi_annotations.json"
     with annotation_path.open("r", encoding="utf-8") as stream:
         records = json.load(stream)["records"]

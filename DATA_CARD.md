@@ -40,7 +40,7 @@ The reported task predicts normalized element bounding boxes from element roles 
 
 The original book-cover artwork is not redistributed because it may remain protected by third-party copyright. Users must obtain source images independently and comply with the terms of the corresponding source websites.
 
-The author-created bounding-box annotations and metadata are separated from the third-party artwork. A license for those author-created fields will be added only after author and institutional confirmation.
+The author-created bounding-box annotations and metadata are separated from the third-party artwork and licensed under CC BY-NC 4.0 for noncommercial use. Author-created scripts under `tools/` are licensed separately under PolyForm Noncommercial 1.0.0. Neither license applies to the underlying cover artwork, publisher logos, or other third-party content.
 
 ## Quality and split limitations
 
@@ -51,6 +51,7 @@ The author-created bounding-box annotations and metadata are separated from the 
 - One additional equal-perceptual-hash train/test pair was visually inspected and determined to be different titles using the same series design, so it is not classified as a duplicate.
 - Perceptual hashes are screening signals and may contain both false positives and false negatives; they are not a substitute for full provenance or human verification.
 
-## Remaining release decision
+## Citation and reuse
 
-- Select a license for the author-created annotations and metadata after author and institutional confirmation.
+- Reuse must follow the noncommercial and attribution conditions in `LICENSE` and `LICENSE_SCOPE.md`.
+- Publications using BookLayout-Bi should cite the associated paper and the archived dataset release once its DOI is available.

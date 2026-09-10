@@ -41,4 +41,6 @@ A post-hoc hash and visual audit found two test records whose source covers are 
 
 ## License
 
-The license will be selected after author and institutional confirmation. No license is granted by this preparation copy.
+The author-created annotations, labels, splits, statistics, provenance fields, and documentation are available for noncommercial use under CC BY-NC 4.0. Author-created scripts under `tools/` use the PolyForm Noncommercial License 1.0.0. Commercial use is not licensed.
+
+These licenses do not apply to underlying book-cover artwork or other third-party content. See [LICENSE_SCOPE.md](LICENSE_SCOPE.md) and [NOTICE](NOTICE) for the exact boundary.

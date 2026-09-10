@@ -6,11 +6,12 @@
 - [x] Stage 2 split sizes are 1,572 training and 174 validation records.
 - [x] No image pixels or embedded image data.
 - [x] No local drive letters or absolute paths in released data records.
-- [ ] No passwords, API keys, access tokens, private emails, or account credentials.
+- [x] No passwords, API keys, access tokens, private emails, or account credentials.
 - [x] No unpublished negative-space experiments.
 - [x] No third-party source-code copies.
 - [x] Provenance claims match the files actually released.
 - [x] Missing source URLs are identified explicitly rather than inferred.
 - [x] Duplicate and split audit is documented.
+- [x] CC BY-NC 4.0 data scope, PolyForm Noncommercial software-tool scope, and third-party artwork exclusion are explicit.
 - [ ] Data Availability Statement matches the final public repository.
 - [ ] Repository visibility remains private until the author approves publication.
